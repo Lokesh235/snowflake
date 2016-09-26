@@ -110,10 +110,7 @@ var VERSION = pack.version
  */
 function getInitialState () {
   const _initState = {
-    auth: new AuthInitialState(),
-    device: (new DeviceInitialState()).set('isMobile', true),
-    global: (new GlobalInitialState()),
-    profile: new ProfileInitialState()
+    device: (new DeviceInitialState()).set('isMobile', true)
   }
   return _initState
 }
